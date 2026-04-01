@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>論文生成系統 · 智漲研究院</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .feature-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px; margin: 40px 0;
+  }
+  .feature-card {
+    background: rgba(200,149,58,0.06);
+    border: 1px solid rgba(200,149,58,0.18);
+    padding: 32px;
+  }
+  .feature-card-icon {
+    font-family: var(--mono); font-size: 11px;
+    letter-spacing: 0.25em; color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .feature-card h3 {
+    font-family: var(--serif); font-weight: 700;
+    font-size: 18px; color: var(--paper);
+    margin-bottom: 12px;
+  }
+  .feature-card p {
+    font-size: 14px; line-height: 1.9;
+    color: rgba(244,239,230,0.5);
+  }
+  .flow-steps {
+    margin: 40px 0;
+    counter-reset: step;
+  }
+  .flow-step {
+    display: flex; align-items: flex-start; gap: 24px;
+    padding: 28px 0; border-bottom: 1px solid rgba(200,149,58,0.12);
+    counter-increment: step;
+  }
+  .flow-step::before {
+    content: counter(step, decimal-leading-zero);
+    font-family: var(--mono); font-size: 24px;
+    color: rgba(200,149,58,0.35); flex-shrink: 0;
+    line-height: 1;
+  }
+  .flow-step h4 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 16px; color: var(--paper);
+    margin-bottom: 8px;
+  }
+  .flow-step p {
+    font-size: 14px; line-height: 1.8;
+    color: rgba(244,239,230,0.5);
+  }
+  .badge {
+    display: inline-block;
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.2em; color: var(--ink);
+    background: var(--gold);
+    padding: 4px 10px; margin-right: 8px;
+    border-radius: 2px;
+  }
+  @media (max-width: 640px) {
+    .feature-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">智</div>
+    <span class="nav-logo-name">智漲研究院</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="thesis.html" class="active">論文生成系統</a></li>
+    <li><a href="research.html">研究方法</a></li>
+    <li><a href="critical.html">牽著鼻子走</a></li>
+    <li><a href="contact.html">聯絡方式</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-inner">
+      <span class="page-hero-tag">AI TOOL · 學術論文自動化平台</span>
+      <h1>論文生成系統</h1>
+      <p class="page-hero-desc">
+        結合多項前沿 AI 技術，只需輸入研究主題與核心問題，系統便會自動完成從文獻蒐集、問卷設計、統計分析，到論文各章節生成的完整流程。
+      </p>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+
+      <div class="section-tag section-tag-light"><span>主要特色</span></div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-card-icon">01 · 文獻搜尋</div>
+          <h3>智能文獻搜尋</h3>
+          <p>整合多個學術資料庫，自動蒐集與研究主題相關的文獻，節省大量手動搜尋的時間。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">02 · 問卷設計</div>
+          <h3>量化問卷設計</h3>
+          <p>根據研究問題自動生成問卷架構與變數設計，確保問卷符合研究所需的有效性。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">03 · 統計分析</div>
+          <h3>嚴謹統計分析</h3>
+          <p>內建 R 語言引擎，支援因子分析、迴歸分析、中介與干擾效果等多種統計方法。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">04 · 論文生成</div>
+          <h3>完整論文生成</h3>
+          <p>自動產出緒論、文獻探討、研究方法、數據分析、結論等六大章節，結構完整。</p>
+        </div>
+      </div>
+
+      <div style="margin-top:16px; padding:24px 32px; border:1px solid rgba(200,149,58,0.2); background:rgba(200,149,58,0.05);">
+        <span class="badge">輸出格式</span>
+        <span style="font-size:14px; color:rgba(244,239,230,0.6);">Markdown 格式</span>
+        <span class="badge" style="margin-left:12px;">輸出格式</span>
+        <span style="font-size:14px; color:rgba(244,239,230,0.6);">PDF 下載</span>
+      </div>
+
+      <div class="section-tag section-tag-light" style="margin-top:72px;"><span>運作流程</span></div>
+
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div>
+            <h4>輸入研究主題與核心問題</h4>
+            <p>只需用兩句話說明你的研究背景與問題，系統即可理解研究方向，開始自動處理後續所有流程。</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div>
+            <h4>自動文獻蒐集</h4>
+            <p>系統整合多個學術資料庫，搜尋並篩選與研究主題相關的學術文獻，建立文獻基礎。</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div>
+            <h4>問卷設計與統計分析</h4>
+            <p>根據研究框架自動設計問卷，並運用 R 語言進行因子分析、迴歸分析等嚴謹的統計計算。</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div>
+            <h4>完整論文輸出</h4>
+            <p>自動生成結構完整的示範性質學術論文，涵蓋六大章節，支援 Markdown 與 PDF 格式下載。</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:14px; line-height:1.9; color:rgba(244,239,230,0.45); margin-top:32px; padding:20px 24px; border-left:2px solid rgba(200,149,58,0.3);">
+        本系統專門提供給智漲研究院的觀眾，幫助你迅速依照自己的議題產生簡單的研究報告，期望大幅降低研究者學習撰寫論文的時間成本。所產出之論文為示範性質，建議作為學習參考之用。
+      </p>
+
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  <span class="footer-copy">© 智漲研究院 · IQ Spillover · zetaaxis.com</span>
+  <ul class="footer-links">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="research.html">研究方法</a></li>
+    <li><a href="contact.html">聯絡方式</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>

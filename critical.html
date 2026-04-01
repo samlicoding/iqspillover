@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>牽著鼻子走系列 · 智漲研究院</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">智</div>
+    <span class="nav-logo-name">智漲研究院</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="thesis.html">論文生成系統</a></li>
+    <li><a href="research.html">研究方法</a></li>
+    <li><a href="critical.html" class="active">牽著鼻子走</a></li>
+    <li><a href="contact.html">聯絡方式</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-inner">
+      <span class="page-hero-tag">SERIES 02 · 12集</span>
+      <h1>牽著鼻子走系列</h1>
+      <p class="page-hero-desc">
+        你是牧羊人領著一群羊在走？還是你就是那群羊裡的一隻笨羊？瞭解邏輯謬誤，避免陷入思維的陷阱。
+      </p>
+    </div>
+  </div>
+
+  <!-- 目錄 -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-tag"><span>系列目錄</span></div>
+      <div class="series-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:2px;">
+
+        <a href="#c01" class="series-card" style="padding:24px 28px;" onclick="openAcc('c01')">
+          <div class="card-num">EP 01</div>
+          <div class="card-title" style="font-size:15px;">簡介：非形式謬誤的重要性</div>
+          <div class="card-desc" style="font-size:12px;">你是牧羊人還是笨羊？</div>
+        </a>
+        <a href="#c02" class="series-card" style="padding:24px 28px;" onclick="openAcc('c02')">
+          <div class="card-num">EP 02</div>
+          <div class="card-title" style="font-size:15px;">先入為主謬誤</div>
+          <div class="card-desc" style="font-size:12px;">你如果看別人像個智漲，那你就真的是一個智漲了</div>
+        </a>
+        <a href="#c03" class="series-card" style="padding:24px 28px;" onclick="openAcc('c03')">
+          <div class="card-num">EP 03</div>
+          <div class="card-title" style="font-size:15px;">以偏蓋全的謬誤</div>
+          <div class="card-desc" style="font-size:12px;">看孔雀如果只注意到牠的屁眼，那你的人生就很灰色了</div>
+        </a>
+        <a href="#c04" class="series-card" style="padding:24px 28px;" onclick="openAcc('c04')">
+          <div class="card-num">EP 04</div>
+          <div class="card-title" style="font-size:15px;">非黑即白的謬誤</div>
+          <div class="card-desc" style="font-size:12px;">進行網路攻擊時，先把人打成惡魔再燒了就對了</div>
+        </a>
+        <a href="#c05" class="series-card" style="padding:24px 28px;" onclick="openAcc('c05')">
+          <div class="card-num">EP 05</div>
+          <div class="card-title" style="font-size:15px;">倖存者的謬誤</div>
+          <div class="card-desc" style="font-size:12px;">你聽到的成功故事都是真的，只不過你永遠不會是那傢伙</div>
+        </a>
+        <a href="#c06" class="series-card" style="padding:24px 28px;" onclick="openAcc('c06')">
+          <div class="card-num">EP 06</div>
+          <div class="card-title" style="font-size:15px;">資訊易得性的謬誤</div>
+          <div class="card-desc" style="font-size:12px;">突如其來的資訊很容易把你從智漲打成豬頭</div>
+        </a>
+        <a href="#c07" class="series-card" style="padding:24px 28px;" onclick="openAcc('c07')">
+          <div class="card-num">EP 07</div>
+          <div class="card-title" style="font-size:15px;">竊題的謬誤</div>
+          <div class="card-desc" style="font-size:12px;">前提怪怪的，什麼都怪怪的</div>
+        </a>
+        <a href="#c08" class="series-card" style="padding:24px 28px;" onclick="openAcc('c08')">
+          <div class="card-num">EP 08</div>
+          <div class="card-title" style="font-size:15px;">導向無知的謬誤</div>
+          <div class="card-desc" style="font-size:12px;">你無法證明上帝不存在，那上帝就是存在囉</div>
+        </a>
+        <a href="#c09" class="series-card" style="padding:24px 28px;" onclick="openAcc('c09')">
+          <div class="card-num">EP 09</div>
+          <div class="card-title" style="font-size:15px;">滑坡謬誤</div>
+          <div class="card-desc" style="font-size:12px;">小小年紀就敢掀人家裙子，長大還得了啊</div>
+        </a>
+        <a href="#c10" class="series-card" style="padding:24px 28px;" onclick="openAcc('c10')">
+          <div class="card-num">EP 10</div>
+          <div class="card-title" style="font-size:15px;">稻草人謬誤</div>
+          <div class="card-desc" style="font-size:12px;">講不過你，那就換個姿勢再來一次</div>
+        </a>
+        <a href="#c11" class="series-card" style="padding:24px 28px;" onclick="openAcc('c11')">
+          <div class="card-num">EP 11</div>
+          <div class="card-title" style="font-size:15px;">不充分及歧義謬誤</div>
+          <div class="card-desc" style="font-size:12px;">「媽媽牛肉滷得很爛」到底是褒還是貶啊</div>
+        </a>
+        <a href="#c12" class="series-card" style="padding:24px 28px; background:var(--ink); border-color:rgba(200,149,58,0.25);" onclick="openAcc('c12')">
+          <div class="card-num" style="color:var(--gold-light);">EP 12</div>
+          <div class="card-title" style="color:var(--paper); font-size:15px;">完結篇</div>
+          <div class="card-desc" style="color:rgba(244,239,230,0.45); font-size:12px;">謝謝大家對我的支持</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 影片 -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <div class="section-tag section-tag-light"><span>影片內容</span></div>
+
+      <div class="accordion">
+
+        <div class="acc-item" id="c01">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 01</span>
+            <span class="acc-title-text acc-title-dark">簡介：邏輯中的非形式謬誤的重要性</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">「你是牧羊人領著一群羊在走？還是你就是那群羊裡的一隻笨羊？」</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=1" title="C01" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c02">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 02</span>
+            <span class="acc-title-text acc-title-dark">先入為主謬誤：「你如果看別人像個智漲，那你就真的是一個智漲了」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">「心中有佛，見人皆佛；心中駐魔，佛亦成魔」，在這一集中我們討論如何避免先入為主的謬誤。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=2" title="C02" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c03">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 03</span>
+            <span class="acc-title-text acc-title-dark">以偏蓋全的謬誤：「看孔雀如果只注意到牠的屁眼，那你的人生就真的很灰色了」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">事有輕重緩急，缺點也是。你是不是也很容易被人家因為重複傳播的芝麻小事情而影響你的判斷？</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=3" title="C03" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c04">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 04</span>
+            <span class="acc-title-text acc-title-dark">非黑即白的謬誤：「進行網路攻擊時，先把人打成惡魔之後再綁在木樁上燒了就對了」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">「愛你」的否定詞是「沒有愛你」，「沒有愛你」是代表討厭你的意思嗎？當然不是啊，情感非常多元。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=4" title="C04" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c05">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 05</span>
+            <span class="acc-title-text acc-title-dark">倖存者的謬誤：「你聽到的成功故事都是真的，只不過你永遠不會是那傢伙」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">年輕的時候常看股市老師在電視上講得口沫橫飛，信老師得永生；可惜的是，賺錢的人永遠不會是你。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=5" title="C05" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c06">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 06</span>
+            <span class="acc-title-text acc-title-dark">資訊易得性的謬誤：「突如其來的資訊很容易把你從智漲打成豬頭」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">研究了三個月決定要買一台 T 牌的車子，就在你明天準備要去下單的時候，你卻在今晚聽到旁邊有人抱怨 T 牌的維修多爛，這個時候，你明天還會簽約嗎？</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=6" title="C06" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c07">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 07</span>
+            <span class="acc-title-text acc-title-dark">竊題的謬誤：「前提怪怪的，什麼都怪怪的」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">腳底按摩有一個強烈的前提就是腳底是有穴道的，可以治百病，這個前提你相信嗎？很多言論都根基在一個「前提」，前提怪怪的，接下來什麼都會怪怪的。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=7" title="C07" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c08">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 08</span>
+            <span class="acc-title-text acc-title-dark">導向無知的謬誤：「你無法證明上帝不存在，那上帝就是存在囉」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">無法證明氣功無效、無法證明中藥不能養生、無法證明外星人不存在，所以這些都一定存在??? 你智漲啊???</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=8" title="C08" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c09">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 09</span>
+            <span class="acc-title-text acc-title-dark">滑坡謬誤：「小小年紀就敢掀人家裙子，長大還得了啊」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">「小時候就會抽煙，以後就會抽大麻，之後再吸毒品，然後你的人生就完了」，真的會這樣一步一步走下去嗎？這種推論感覺合理，其實完全不堪一擊。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=9" title="C09" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c10">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 10</span>
+            <span class="acc-title-text acc-title-dark">稻草人謬誤：「講不過你，那就換個姿勢再來一次」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">本來只是一個小小的停車糾紛，明知是自己理虧；那乾脆把這問題創造成另一個「有錢人欺負貧苦人」的戲碼，轉移論證主題，那我可能可以反敗為勝喔。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=10" title="C10" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c11">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 11</span>
+            <span class="acc-title-text acc-title-dark">不充分及歧義謬誤：「媽媽牛肉滷得很爛」到底是褒還是貶啊」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">如果在介紹沒有用的東西之前先引用一段諾貝爾獎得主的話，會不會讓你對商品充滿信心？可惡的是，諾貝爾獎得主說的話和要推銷的商品根本毫無瓜葛。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=11" title="C11" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="c12">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 12</span>
+            <span class="acc-title-text acc-title-dark">完結篇</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">希望能讓大家瞭解一些思考過程中常有的陷阱，在網路、學習或職場中，能有清楚的腦袋去當牧羊人，如果沒辦法，至少不要成為那被別人牽著走的那隻笨羊。謝謝大家。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0BBEBQCWiPIHWo0ulkdZjeU&index=12" title="C12" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  <span class="footer-copy">© 智漲研究院 · IQ Spillover · zetaaxis.com</span>
+  <ul class="footer-links">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="research.html">研究方法</a></li>
+    <li><a href="contact.html">聯絡方式</a></li>
+  </ul>
+</footer>
+
+<script>
+function toggleAcc(header) {
+  const item = header.closest('.acc-item');
+  const body = item.querySelector('.acc-body');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.acc-item.open').forEach(el => {
+    el.classList.remove('open');
+    el.querySelector('.acc-body').classList.remove('open');
+  });
+  if (!isOpen) { item.classList.add('open'); body.classList.add('open'); }
+}
+function openAcc(id) {
+  setTimeout(() => {
+    const item = document.getElementById(id);
+    if (item) {
+      item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => {
+        const header = item.querySelector('.acc-header');
+        if (header) toggleAcc(header);
+      }, 500);
+    }
+  }, 100);
+}
+</script>
+</body>
+</html>

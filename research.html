@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究方法系列 · 智漲研究院</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">智</div>
+    <span class="nav-logo-name">智漲研究院</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="thesis.html">論文生成系統</a></li>
+    <li><a href="research.html" class="active">研究方法</a></li>
+    <li><a href="critical.html">牽著鼻子走</a></li>
+    <li><a href="contact.html">聯絡方式</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-inner">
+      <span class="page-hero-tag">SERIES 01 · 18集 + 補充集</span>
+      <h1>研究方法系列</h1>
+      <p class="page-hero-desc">
+        從研究問題的訂定，一路走到資料分析與報告撰寫。每一集都是一個關鍵里程碑，幫助你成為真正能創造知識的智漲族。
+      </p>
+    </div>
+  </div>
+
+  <!-- 目錄 -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-tag"><span>系列目錄</span></div>
+      <div class="series-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:2px;">
+
+        <a href="#ep01" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep01')">
+          <div class="card-num">EP 01</div>
+          <div class="card-title" style="font-size:15px;">開場白</div>
+          <div class="card-desc" style="font-size:12px;">你也是要創造知識、解決問題的智漲一族嗎？</div>
+        </a>
+        <a href="#ep02" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep02')">
+          <div class="card-num">EP 02</div>
+          <div class="card-title" style="font-size:15px;">嚴格禁止抄襲剽竊</div>
+          <div class="card-desc" style="font-size:12px;">你如果剽竊別人的成果，一定會被抓到</div>
+        </a>
+        <a href="#ep03" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep03')">
+          <div class="card-num">EP 03</div>
+          <div class="card-title" style="font-size:15px;">操作型定義</div>
+          <div class="card-desc" style="font-size:12px;">不會操作型定義，基本上你就在胡言亂語</div>
+        </a>
+        <a href="#ep04" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep04')">
+          <div class="card-num">EP 04</div>
+          <div class="card-title" style="font-size:15px;">閱讀學術文章</div>
+          <div class="card-desc" style="font-size:12px;">如何快速判斷一篇文章跟你的研究有沒有關係？</div>
+        </a>
+        <a href="#ep05" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep05')">
+          <div class="card-num">EP 05</div>
+          <div class="card-title" style="font-size:15px;">搞清楚研究主題 1/2</div>
+          <div class="card-desc" style="font-size:12px;">不會訂研究問題，接下去就不用做了</div>
+        </a>
+        <a href="#ep06" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep06')">
+          <div class="card-num">EP 06</div>
+          <div class="card-title" style="font-size:15px;">搞清楚研究主題 2/2</div>
+          <div class="card-desc" style="font-size:12px;">研究題目要跟神奇寶貝一樣要慢慢進化</div>
+        </a>
+        <a href="#ep07" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep07')">
+          <div class="card-num">EP 07</div>
+          <div class="card-title" style="font-size:15px;">看圖說故事</div>
+          <div class="card-desc" style="font-size:12px;">把你的想法畫出來，畫不出來接下去就不用做了</div>
+        </a>
+        <a href="#ep08" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep08')">
+          <div class="card-num">EP 08</div>
+          <div class="card-title" style="font-size:15px;">如何進行文獻探討</div>
+          <div class="card-desc" style="font-size:12px;">等你把架構圖畫好了，才有資格說怎麼蒐集文獻</div>
+        </a>
+        <a href="#ep09" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep09')">
+          <div class="card-num">EP 09</div>
+          <div class="card-title" style="font-size:15px;">研究設計</div>
+          <div class="card-desc" style="font-size:12px;">問題確定、架構圖畫好了，接下來呢？</div>
+        </a>
+        <a href="#ep10" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep10')">
+          <div class="card-num">EP 10</div>
+          <div class="card-title" style="font-size:15px;">資料蒐集</div>
+          <div class="card-desc" style="font-size:12px;">你打算怎麼收集這個你要的資料啊？</div>
+        </a>
+        <a href="#ep11" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep11')">
+          <div class="card-num">EP 11</div>
+          <div class="card-title" style="font-size:15px;">問卷設計</div>
+          <div class="card-desc" style="font-size:12px;">要怎麼生出一份問卷啊？</div>
+        </a>
+        <a href="#ep12" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep12')">
+          <div class="card-num">EP 12</div>
+          <div class="card-title" style="font-size:15px;">問卷發放</div>
+          <div class="card-desc" style="font-size:12px;">問卷該怎麼樣發放啊？要發多少啊？</div>
+        </a>
+        <a href="#ep13" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep13')">
+          <div class="card-num">EP 13</div>
+          <div class="card-title" style="font-size:15px;">資料整理與檢查</div>
+          <div class="card-desc" style="font-size:12px;">Garbage in, Garbage out</div>
+        </a>
+        <a href="#ep14" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep14')">
+          <div class="card-num">EP 14</div>
+          <div class="card-title" style="font-size:15px;">資料分析模式</div>
+          <div class="card-desc" style="font-size:12px;">接下來該怎麼加減乘除啊？</div>
+        </a>
+        <a href="#ep15" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep15')">
+          <div class="card-num">EP 15</div>
+          <div class="card-title" style="font-size:15px;">計量型分析模式</div>
+          <div class="card-desc" style="font-size:12px;">見魔殺魔見佛殺佛，先瞭解工具的用途</div>
+        </a>
+        <a href="#ep16" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep16')">
+          <div class="card-num">EP 16</div>
+          <div class="card-title" style="font-size:15px;">質化分析</div>
+          <div class="card-desc" style="font-size:12px;">如何使用文字資料去建構一個理論模式？</div>
+        </a>
+        <a href="#ep17" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep17')">
+          <div class="card-num">EP 17</div>
+          <div class="card-title" style="font-size:15px;">寫報告</div>
+          <div class="card-desc" style="font-size:12px;">寫一個好故事告訴人家吧</div>
+        </a>
+        <a href="#ep18" class="series-card" style="padding:24px 28px;" onclick="openAcc('ep18')">
+          <div class="card-num">EP 18</div>
+          <div class="card-title" style="font-size:15px;">最終章</div>
+          <div class="card-desc" style="font-size:12px;">感謝您一路上的支持</div>
+        </a>
+        <a href="#epbonus" class="series-card" style="padding:24px 28px; background:var(--ink); border-color:rgba(200,149,58,0.25); grid-column: span 2;" onclick="openAcc('epbonus')">
+          <div class="card-num" style="color:var(--gold-light);">補充集</div>
+          <div class="card-title" style="color:var(--paper); font-size:15px;">論文引用、抄襲與剽竊</div>
+          <div class="card-desc" style="color:rgba(244,239,230,0.45); font-size:12px;">學術誠信的深度探討</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 影片 -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <div class="section-tag section-tag-light"><span>影片內容</span></div>
+
+      <!-- 播放清單：PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ -->
+
+      <div class="accordion">
+
+        <div class="acc-item" id="ep01">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 01</span>
+            <span class="acc-title-text acc-title-dark">開場白：「你也是要創造知識、解決問題的智漲一族嗎？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">願原力與你同在，也願無力無所不在；因為你的無力，老師、教授和師父才得以生存。</p>
+              <!-- 請換成你的 YouTube 連結 -->
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=1" title="EP01" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep02">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 02</span>
+            <span class="acc-title-text acc-title-dark">嚴格禁止抄襲剽竊：「你如果剽竊別人的成果，一定會被抓到」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">拍完第二集的第二天就發生了高雄市長候選人的論文事件，真巧。希望我曾教過的學生，都不會因為論文抄襲剽竊的問題而煩惱。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=2" title="EP02" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep03">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 03</span>
+            <span class="acc-title-text acc-title-dark">操作型定義：「不會操作型定義，基本上你就在胡言亂語」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=3" title="EP03" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep04">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 04</span>
+            <span class="acc-title-text acc-title-dark">閱讀學術文章：「一堆文章要看，如何快速判斷一篇文章跟你的研究有沒有關係？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=4" title="EP04" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep05">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 05</span>
+            <span class="acc-title-text acc-title-dark">搞清楚研究主題 1/2：「不會訂研究問題，接下去就不用做了」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=5" title="EP05" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep06">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 06</span>
+            <span class="acc-title-text acc-title-dark">搞清楚研究主題 2/2：「研究題目要跟神奇寶貝一樣要慢慢進化」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=6" title="EP06" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep07">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 07</span>
+            <span class="acc-title-text acc-title-dark">看圖說故事：「把你的想法畫出來，畫不出來，接下去就不用做了」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">這是我在說明研究方法時，除了訂一個問題之外，最重要的工作。一個問題如果不能用畫圖的方式去跟別人表達的話，那基本上你應該是腦袋沒想清楚。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=7" title="EP07" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep08">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 08</span>
+            <span class="acc-title-text acc-title-dark">如何進行文獻探討：「等你把架構圖畫好了，才有資格來說怎麼蒐集文獻」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">通常一個新手寫最多的就是文獻回顧了，因為可以抄的東西比較多；但是經常看到毫無想法的文獻整理。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=8" title="EP08" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep09">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 09</span>
+            <span class="acc-title-text acc-title-dark">研究設計：「既然問題確定、相關想法架構圖也畫好了，接下來呢？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=9" title="EP09" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep10">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 10</span>
+            <span class="acc-title-text acc-title-dark">資料蒐集：「你打算怎麼收集這個你要的資料啊？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=10" title="EP10" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep11">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 11</span>
+            <span class="acc-title-text acc-title-dark">問卷設計：「問卷是管理學常用的蒐集資料工具，但是，要怎麼生出一份問卷啊？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=11" title="EP11" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep12">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 12</span>
+            <span class="acc-title-text acc-title-dark">問卷發放：「等你搞清楚你的研究對象是誰之後，那問卷該怎麼樣發放啊？要發多少啊？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=12" title="EP12" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep13">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 13</span>
+            <span class="acc-title-text acc-title-dark">資料整理與檢查：「你蒐集的資料是可信的嗎？如果資料不可信的話，Garbage in, Garbage out」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=13" title="EP13" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep14">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 14</span>
+            <span class="acc-title-text acc-title-dark">資料分析模式：「你的研究資料準備好了，接下來該怎麼加減乘除啊？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">拿著證據說話是解決問題創造知識的重要態度，而選擇適當的分析工具才能使你得到的證據具有說服力。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=14" title="EP14" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep15">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 15</span>
+            <span class="acc-title-text acc-title-dark">計量型分析模式：「修練至此，見魔殺魔見佛殺佛，想拿對分析工具前，先瞭解它的用途為何吧」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=15" title="EP15" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep16">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 16</span>
+            <span class="acc-title-text acc-title-dark">質化分析：「如何使用文字資料去建構一個理論模式啊？」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">「你媽媽的東坡肉滷得很爛」這一句話是褒還是貶啊？我花了 25 分鐘來說一說這質化分析的基本方法。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=16" title="EP16" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep17">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 17</span>
+            <span class="acc-title-text acc-title-dark">寫報告：「該做的分析研究工作都做完了，寫一個好故事告訴人家吧」</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">一份報告由「知識」和「姿勢」組合而成。包得簡單又醜陋的貨品，大部分的人根本就沒興趣想去知道裡面到底包了什麼東西。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=17" title="EP17" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="ep18">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">EP 18</span>
+            <span class="acc-title-text acc-title-dark">最終章</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <p class="acc-note acc-note-dark">非常感謝您對於智漲研究院之研究方法系列的支持，希望對這研究分析工作有所幫助。</p>
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=18" title="EP18" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item" id="epbonus">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-ep acc-ep-dark">補充集</span>
+            <span class="acc-title-text acc-title-dark">論文引用、抄襲與剽竊</span>
+            <span class="acc-chevron">▼</span>
+          </div>
+          <div class="acc-body">
+            <div class="acc-inner">
+              <iframe class="video-frame" src="https://www.youtube.com/embed/videoseries?list=PLmEUejjHqd0CwfgoWTXFp7_g5k-2Ov2YQ&index=19" title="Bonus" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  <span class="footer-copy">© 智漲研究院 · IQ Spillover · zetaaxis.com</span>
+  <ul class="footer-links">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="critical.html">牽著鼻子走</a></li>
+    <li><a href="contact.html">聯絡方式</a></li>
+  </ul>
+</footer>
+
+<script>
+function toggleAcc(header) {
+  const item = header.closest('.acc-item');
+  const body = item.querySelector('.acc-body');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.acc-item.open').forEach(el => {
+    el.classList.remove('open');
+    el.querySelector('.acc-body').classList.remove('open');
+  });
+  if (!isOpen) { item.classList.add('open'); body.classList.add('open'); }
+}
+function openAcc(id) {
+  setTimeout(() => {
+    const item = document.getElementById(id);
+    if (item) {
+      item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => {
+        const header = item.querySelector('.acc-header');
+        if (header) toggleAcc(header);
+      }, 500);
+    }
+  }, 100);
+}
+</script>
+</body>
+</html>

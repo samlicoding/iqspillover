@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯絡方式 · 智漲研究院</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .two-col {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 40px; margin-top: 40px;
+  }
+  .format-table {
+    width: 100%; border-collapse: collapse;
+    margin-top: 28px;
+  }
+  .format-table th {
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.2em; color: var(--gold);
+    text-align: left; padding: 10px 16px;
+    background: rgba(200,149,58,0.08);
+    border-bottom: 1px solid rgba(200,149,58,0.2);
+  }
+  .format-table td {
+    font-size: 14px; line-height: 1.8;
+    color: rgba(244,239,230,0.55);
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(200,149,58,0.08);
+    vertical-align: top;
+  }
+  .format-table td:first-child {
+    font-family: var(--mono); font-size: 12px;
+    color: var(--gold-light); white-space: nowrap;
+    width: 80px;
+  }
+  @media (max-width: 640px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">智</div>
+    <span class="nav-logo-name">智漲研究院</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="thesis.html">論文生成系統</a></li>
+    <li><a href="research.html">研究方法</a></li>
+    <li><a href="critical.html">牽著鼻子走</a></li>
+    <li><a href="contact.html" class="active">聯絡方式</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-inner">
+      <span class="page-hero-tag">CONTACT · 意見與連絡</span>
+      <h1>聯絡方式</h1>
+      <p class="page-hero-desc">
+        如果你對本站有什麼建議，或是在寫作論文上有什麼問題，歡迎你留言指教。我非常期待你的回饋。
+      </p>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+
+      <div class="section-tag section-tag-light"><span>寫信給我</span></div>
+
+      <div class="contact-block">
+        <p style="font-size:15px; line-height:1.9; color:rgba(244,239,230,0.6); max-width:600px;">
+          有很多從事分析研究工作的生手或是研究生，對於如何開始進行一個研究非常茫然，更不用說完成一份碩士論文或是分析報告了。如果你不知道怎麼開始的話，歡迎用 email 詳細說明你的問題。
+        </p>
+        <a href="mailto:IQspillover@zetaaxis.com" class="contact-email">IQspillover@zetaaxis.com</a>
+        <p style="font-size:13px; color:rgba(244,239,230,0.35); margin-top:4px; font-family:var(--mono); letter-spacing:0.1em;">
+          我不一定會回你，你的留言也不一定會被公開，但我仍然非常期待你的回饋。
+        </p>
+      </div>
+
+      <div class="section-tag section-tag-light" style="margin-top:72px;"><span>提問格式建議</span></div>
+
+      <p style="font-size:15px; line-height:1.9; color:rgba(244,239,230,0.55); margin-bottom:24px;">
+        為了避免大家討論沒有焦點，以至於浪費了彼此的時間，可以把你的問題用<strong style="color:var(--gold-light); font-weight:500;">兩句話</strong>的方式來說明：
+      </p>
+
+      <table class="format-table">
+        <tr>
+          <th>第一句</th>
+          <th>說明問題背景</th>
+        </tr>
+        <tr>
+          <td>第二句</td>
+          <td>以「問句」方式說明你的研究題目</td>
+        </tr>
+      </table>
+
+      <div class="two-col" style="margin-top:40px;">
+
+        <div>
+          <p style="font-family:var(--mono); font-size:11px; letter-spacing:0.2em; color:var(--gold); margin-bottom:20px;">範例 01</p>
+          <div class="example-box">
+            <p><strong>背景：</strong>每次過年的時候，總有人在打麻將的時候加了很多裝備，來增加自己的運氣，譬如說：手飾、幸運符…</p>
+          </div>
+          <div class="example-box" style="margin-top:8px;">
+            <p><strong>研究問題：</strong>穿色內衣褲打麻將真的會比較容易贏錢嗎？</p>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-family:var(--mono); font-size:11px; letter-spacing:0.2em; color:var(--gold); margin-bottom:20px;">範例 02</p>
+          <div class="example-box">
+            <p><strong>背景：</strong>經濟學都假設人是理性的，一定會去爭取自己最大的利益。</p>
+          </div>
+          <div class="example-box" style="margin-top:8px;">
+            <p><strong>研究問題：</strong>為什麼阿媽去市場買蔥，33元的蔥會請老板算30元，買兩三萬元的iPhone，為什麼她不要叫老板便宜70元呢？</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:56px; padding:32px; border:1px solid rgba(200,149,58,0.2); text-align:center;">
+        <p style="font-family:var(--mono); font-size:11px; letter-spacing:0.25em; color:var(--gold); margin-bottom:16px;">WRITE TO US</p>
+        <a href="mailto:IQspillover@zetaaxis.com" class="contact-email" style="font-size:22px;">IQspillover@zetaaxis.com</a>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  <span class="footer-copy">© 智漲研究院 · IQ Spillover · zetaaxis.com</span>
+  <ul class="footer-links">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="research.html">研究方法</a></li>
+    <li><a href="critical.html">牽著鼻子走</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
